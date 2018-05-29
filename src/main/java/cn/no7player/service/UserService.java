@@ -20,5 +20,11 @@ public class UserService {
         //User user=null;
         return user;
     }
+    
+    public User findUserByName(String username){
+        User user=userMapper.findUserByName(username);
+        //User user=null;
+        return user;
+    }
 
 }

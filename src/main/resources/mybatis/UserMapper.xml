@@ -5,5 +5,9 @@
   <select id="findUserInfo" resultType="cn.no7player.model.User">
     select name, age,password from user;
   </select>
+  
+  <select id="findUserByName" parameterType="String" resultType="cn.no7player.model.User">
+    select name, age,password from user where name=#{username};
+  </select>
  
 </mapper>

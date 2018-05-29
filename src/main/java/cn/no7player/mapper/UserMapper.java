@@ -7,4 +7,5 @@ import cn.no7player.model.User;
  */
 public interface UserMapper {
     public User findUserInfo();
+    public User findUserByName(String username);
 }
